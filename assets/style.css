@@ -13,6 +13,7 @@ a {
 body{
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: #a5a5a5;
 }
 
 nav {
@@ -129,34 +130,76 @@ input[type="checkbox"] {
 
 
 /* Banner */
-.wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 100%;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .swiper-container {
-  width: 100vw;
-  height: 50vh;
-  position: relative;
+  height: 350px;
 }
 
-.item_slide{
-  position: relative;
-  margin: auto;
+.swiper-wrapper {
+  align-items: center;
 }
 
-.item_img{
-  max-width: 60vw;
-  height: 40vh;
+.swiper-slide {
+  width: 40%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: rgb(60, 60, 60);
+}
+
+.swiper-slide img {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
   background-color: #fff;
-  box-shadow: 1px 1px 6px #a5a5a5;
-  border-radius: 15px;
+  position: absolute;
+}
+
+.swiper-slide-active {
+  transform: scale(1.2);
+  transition: .4s;
+}
+
+.swiper-slide-active .status {
+  width: 100%;
+  height: 50px;
+  margin-top: 180px;
+  text-align: justify;
+  background: #111;
+  opacity: 0.8;
+  position: absolute;
+  transition: 1s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.swiper-slide-active .status  h3 {
+  font-size: 15px;
+  margin-left: 7px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.swiper-slide-active .status  p {
+  font-size: 10px;
+  margin-left: 7px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.swiper-slide-active .status a {
+  text-decoration: none;
+  color: #fff;
+  float: right;
+  margin-right: 7px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 1px 8px;
+}
+
+.swiper-slide-active .status a:hover {
+  color: #111;
+  background-color: #fff;
+  opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {

@@ -1,5 +1,9 @@
 var swiper = new Swiper('.swiper-container', {
     loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 70,
+    centeredSlides: true,
+    grabCursor: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -14,4 +18,3 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
-
