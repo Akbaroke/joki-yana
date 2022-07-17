@@ -16,7 +16,7 @@
   <body>
     <header>
       <nav>
-        <div class="logo">YnaY Store</div>
+        <a href="" class="logo"> YnaY Store</a>
         <input type="checkbox" id="click" />
         <label for="click" class="menu-btn">
           <i class="fas fa-bars"></i>
@@ -32,41 +32,64 @@
     </header>
     <main>
       <section class="banner">
-        <div class="item_wrapper swiper-wrapper">
-          <div class="item_slide swiper-slide">
-              <div class="item_img">
-                  <picture>
-                      <source srcset="img/img1_.png" type="image/webp">
-                      <img src="img/img1_.png" alt="img1">
-                  </picture>
-              </div>
+        <div class="item swiper-container">
+          <div class="item_wrapper swiper-wrapper">
+            <div class="item_slide swiper-slide">
+                <div class="item_img">
+                    <picture>
+                        <source srcset="assets/img/banner1.jpg" type="image/webp">
+                        <img src="assets/img/banner1.jpg" alt="img1">
+                    </picture>
+                </div>
+            </div>
+            <div class="item_slide swiper-slide">
+                <div class="item_img">
+                    <picture>
+                        <source srcset="assets/img/banner2.jpg" type="image/webp">
+                        <img src="assets/img/banner2.jpg" alt="img2">
+                    </picture>
+                </div>
+            </div>
+            <div class="item_slide swiper-slide">
+                <div class="item_img">
+                    <picture>
+                        <source srcset="assets/img/banner3.jpg" type="image/webp">
+                        <img src="assets/img/banner3.jpg" alt="img3">
+                    </picture>
+                </div>
+            </div>
           </div>
-          <div class="item_slide swiper-slide">
-              <div class="item_img">
-                  <picture>
-                      <source srcset="img/img2_.png" type="image/webp">
-                      <img src="img/img2_.png" alt="img2">
-                  </picture>
-              </div>
-          </div>
-          <div class="item_slide swiper-slide">
-              <div class="item_img">
-                  <picture>
-                      <source srcset="img/img3_.png" type="image/webp">
-                      <img src="img/img3_.png" alt="img3">
-                  </picture>
-              </div>
-          </div>
+          <!-- Add Pagination -->
+          <div class="item_pagination swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
         </div>
-        <!-- Add Pagination -->
-        <div class="item_pagination swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
       </section>
       <section class="">
         
       </section>
+
+      <!-- Mid Content -->
+
+      <section>
+        <div class="slider">
+          <div class="slider--content">
+            <button class="slider__btn-left">
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="slider--feature">
+              <h1 class="slider--title">Tasty</h1>
+              <p class="slider--text"></p>
+              <button class="slider--btn">Get started</button>
+            </div>
+            <button class="slider__btn-right">
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Mid Content Close -->
     </main>
     <script
     src="https://code.jquery.com/jquery-3.6.0.js"
