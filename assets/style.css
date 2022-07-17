@@ -5,19 +5,27 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 nav {
   display: flex;
   height: 80px;
   width: 100%;
-  background: #1b1b1b;
+  background: #d8d8cf;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
+  border-bottom: #81817c;
+  
 }
 nav .logo {
-  color: #fff;
-  font-size: 35px;
+  color: rgb(70, 70, 70);
+  font-size: 20px;
   font-weight: 600;
 }
 nav ul {
@@ -29,7 +37,7 @@ nav ul li {
   margin: 0 5px;
 }
 nav ul li a {
-  color: #f2f2f2;
+  color: rgb(83, 83, 83);
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
@@ -112,4 +120,51 @@ input[type="checkbox"] {
 .content div {
   font-size: 40px;
   font-weight: 700;
+}
+
+
+/* Banner */
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-container {
+  margin-top: 100px;
+  width: 70vmax;
+  height: 27.3vmax;
+  border-radius: 15px;
+}
+
+.swiper-container:hover{
+  box-shadow: 0 0 0 3px #078CC2 ,
+              0 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.item_img {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.item_img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
 }
