@@ -329,17 +329,7 @@ input[type="checkbox"] {
   }
 }
 
-<<<<<<< HEAD
-/* Video Background */
-.paralax{
-  background-image: url("/assets/img/img-3.gif");
-  height: 50vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-=======
+
 /* Mid Content */
 .css-slider-wrapper {
   display: block;
@@ -628,4 +618,4 @@ input[type="checkbox"] {
   width: 100%;
   height: 100vh;
 }
->>>>>>> 2b4dcda399445988d23133e9d98f6768da69d4b0
+
