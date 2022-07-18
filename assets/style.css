@@ -26,6 +26,8 @@ nav {
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
   border-bottom: #81817c;
+  z-index: 99999999999;
+  position: fixed;
 }
 nav .logo {
   color: #464646;
@@ -129,8 +131,12 @@ input[type="checkbox"] {
 
 
 /* Banner */
+.banner{
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
 .swiper-container {
-  height: 400px;
+  height: 380px;
 }
 
 .swiper-wrapper {
@@ -322,4 +328,14 @@ input[type="checkbox"] {
     padding: 30px 10px;
     padding-top: 20px;
   }
+}
+
+/* Video Background */
+.paralax{
+  background-image: url("/assets/img/img-3.gif");
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
